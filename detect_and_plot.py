@@ -11,3 +11,7 @@ def detectx (frame, model):
   print(results.xyxyn[0])
   print(results.xyxyn[0][:, -1])
   print(results.xyxyn[0][:, :-1])
+  
+  labels, cordinates = results.xyxyn[0][:, -1], results.xyxyn[0][:, :-1]
+  
+  return labels, cordinates
