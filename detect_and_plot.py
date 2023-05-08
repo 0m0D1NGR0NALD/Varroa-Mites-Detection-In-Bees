@@ -9,11 +9,11 @@ def detectx (frame, model):
   results = model(frame)
   # Display results
   results.show()
-  # Frame predictions
-  print(results.xyxyn[0])
-  print(results.pandas().xyxyn[0])
-  print(results.xyxyn[0][:, -1])
-  print(results.xyxyn[0][:, :-1])
+  # Frame predictions 
+  print(results.xyxyn[0]) # Tensor
+  print(results.pandas().xyxyn[0]) # Pandas
+  print(results.xyxyn[0][:, -1]) # Tensor
+  print(results.xyxyn[0][:, :-1]) # Tensor
   
   labels, cordinates = results.xyxyn[0][:, -1], results.xyxyn[0][:, :-1]
   
