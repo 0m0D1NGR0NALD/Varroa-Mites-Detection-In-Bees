@@ -8,3 +8,4 @@ def detectx (frame, model):
   print(f"[INFO] Detecting. . . ")
   results = model(frame)
   results.show()
+  print(results.xyxyn[0])
