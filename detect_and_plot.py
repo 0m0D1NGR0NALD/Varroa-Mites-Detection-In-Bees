@@ -16,5 +16,5 @@ def detectx (frame, model):
   print(results.xyxyn[0][:, :-1]) # Tensor
   # Extract class label and BBox coordinates
   label, coordinates = results.xyxyn[0][:, -1], results.xyxyn[0][:, :-1]
-  
+  # Return label and respective coordinates
   return label, coordinates
