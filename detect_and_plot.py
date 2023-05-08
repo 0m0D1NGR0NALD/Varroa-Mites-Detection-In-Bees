@@ -10,3 +10,4 @@ def detectx (frame, model):
   results.show()
   print(results.xyxyn[0])
   print(results.xyxyn[0][:, -1])
+  print(results.xyxyn[0][:, :-1])
