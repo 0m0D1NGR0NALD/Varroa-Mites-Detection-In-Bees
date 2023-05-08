@@ -7,6 +7,7 @@ def detectx (frame, model):
   frame = [frame]
   print(f"[INFO] Detecting. . . ")
   results = model(frame)
+  # Display results
   results.show()
   print(results.xyxyn[0])
   print(results.xyxyn[0][:, -1])
