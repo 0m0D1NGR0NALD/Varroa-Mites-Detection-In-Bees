@@ -9,7 +9,9 @@ def detectx (frame, model):
   results = model(frame)
   # Display results
   results.show()
+  # Frame predictions
   print(results.xyxyn[0])
+  print(results.pandas().xyxyn[0])
   print(results.xyxyn[0][:, -1])
   print(results.xyxyn[0][:, :-1])
   
