@@ -14,7 +14,7 @@ def detectx (frame, model):
   print(results.pandas().xyxyn[0]) # Pandas
   print(results.xyxyn[0][:, -1]) # Tensor
   print(results.xyxyn[0][:, :-1]) # Tensor
+  # Extract class label and BBox coordinates
+  label, coordinates = results.xyxyn[0][:, -1], results.xyxyn[0][:, :-1]
   
-  labels, cordinates = results.xyxyn[0][:, -1], results.xyxyn[0][:, :-1]
-  
-  return labels, cordinates
+  return label, coordinates
