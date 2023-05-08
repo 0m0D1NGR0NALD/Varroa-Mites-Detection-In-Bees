@@ -6,3 +6,4 @@ import cv2
 def detectx (frame, model):
   frame = [frame]
   print(f"[INFO] Detecting. . . ")
+  results = model(frame)
