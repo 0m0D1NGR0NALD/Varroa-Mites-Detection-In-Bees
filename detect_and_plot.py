@@ -30,3 +30,4 @@ def plot_boxes(results, frame,classes):
     >>> classes: contains the labels
     """
     labels, coordinates = results
+    print(labels)
