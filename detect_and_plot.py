@@ -43,3 +43,4 @@ def plot_boxes(results, frame,classes):
         print(row[4])
         # We are discarding everything below this value
         if row[4] >= 0.5: # Threshold value for detection.
+            print(f"[INFO] Extracting BBox coordinates. . . ")
