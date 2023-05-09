@@ -31,3 +31,4 @@ def plot_boxes(results, frame,classes):
     """
     labels, coordinates = results
     print(labels)
+    n = len(labels)
