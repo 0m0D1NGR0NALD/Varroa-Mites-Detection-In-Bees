@@ -35,3 +35,4 @@ def plot_boxes(results, frame,classes):
     x_shape, y_shape = frame.shape[1], frame.shape[0]
     
     print(f"[INFO] Total {n} detections. . . ")
+    print(f"[INFO] Looping through all detections. . . ")
