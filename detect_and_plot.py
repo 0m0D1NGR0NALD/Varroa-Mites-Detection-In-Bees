@@ -41,3 +41,5 @@ def plot_boxes(results, frame,classes):
     for i in range(n):
         row = coordinates[i]
         print(row[4])
+        # We are discarding everything below this value
+        if row[4] >= 0.5: # Threshold value for detection.
