@@ -18,3 +18,6 @@ def detectx (frame, model):
   label, coordinates = results.xyxyn[0][:, -1], results.xyxyn[0][:, :-1]
   # Return label and respective coordinates
   return label, coordinates
+
+# Plot the BBox and results
+def plot_boxes(results, frame,classes):
