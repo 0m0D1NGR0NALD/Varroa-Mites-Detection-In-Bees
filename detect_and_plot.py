@@ -32,3 +32,4 @@ def plot_boxes(results, frame,classes):
     labels, coordinates = results
     print(labels)
     n = len(labels)
+    x_shape, y_shape = frame.shape[1], frame.shape[0]
