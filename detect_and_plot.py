@@ -49,3 +49,5 @@ def plot_boxes(results, frame,classes):
             # Labels text
             text = classes[int(labels[i])]
             if text == 'varroa-mite':
+                # BBox
+                cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 255, 0), 1)
