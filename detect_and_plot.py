@@ -29,3 +29,4 @@ def plot_boxes(results, frame,classes):
     >>> results: contains labels and coordinates predicted by model on the given frame
     >>> classes: contains the labels
     """
+    labels, coordinates = results
