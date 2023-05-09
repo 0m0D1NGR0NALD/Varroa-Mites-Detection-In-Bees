@@ -36,3 +36,6 @@ def plot_boxes(results, frame,classes):
     
     print(f"[INFO] Total {n} detections. . . ")
     print(f"[INFO] Looping through all detections. . . ")
+    
+    # Looping through the detections
+    for i in range(n):
