@@ -4,6 +4,9 @@ import cv2
 
 # Function to run detection
 def detectx (frame, model):
+    """
+    >>> This function takes frame and model
+    """
   frame = [frame]
   print(f"[INFO] Detecting. . . ")
   results = model(frame)
@@ -21,3 +24,8 @@ def detectx (frame, model):
 
 # Plot the BBox and results
 def plot_boxes(results, frame,classes):
+    """
+    >>> This function takes results, frame and classes
+    >>> results: contains labels and coordinates predicted by model on the given frame
+    >>> classes: contains the labels
+    """
