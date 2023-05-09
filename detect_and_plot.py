@@ -40,3 +40,4 @@ def plot_boxes(results, frame,classes):
     # Looping through the detections
     for i in range(n):
         row = coordinates[i]
+        print(row[4])
