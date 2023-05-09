@@ -54,3 +54,5 @@ def plot_boxes(results, frame,classes):
                 # Labels
                 cv2.putText(frame, text_d, (x1, y1), cv2.FONT_HERSHEY_SIMPLEX, 0.3, (255,255,255), 1)
             else:
+                # BBox
+                cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 0, 255), 1)
