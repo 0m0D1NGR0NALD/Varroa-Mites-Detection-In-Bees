@@ -73,5 +73,7 @@ def main(img_path=None, vid_path=None, vid_out = None):
         frame = cv2.imread(img_path)
         frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
         # Detecting objects in input image  
-        results = detectx(frame, model = model)
+        results = detectx(frame, model = model)  
         frame = cv2.cvtColor(frame, cv2.COLOR_RGB2BGR)
+        # Drawing customized bounding boxes
+        frame = plot_boxes(results, frame, classes = classes)
