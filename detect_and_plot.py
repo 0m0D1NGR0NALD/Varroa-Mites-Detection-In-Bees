@@ -81,3 +81,4 @@ def main(image_path=None, video_path=None, video_out = None):
         cv2.namedWindow("Image", cv2.WINDOW_NORMAL)
         while True:
             cv2.imshow("Image", frame)
+            if cv2.waitKey(50000) & 0xFF == 27:
