@@ -59,3 +59,5 @@ def plot_boxes(results, frame,classes):
                 # Labels
                 cv2.putText(frame, text, (x1, y1), cv2.FONT_HERSHEY_SIMPLEX, 0.3, (255,255,255), 1)
     return frame
+
+# Main function
