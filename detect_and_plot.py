@@ -69,3 +69,4 @@ def main(img_path=None, vid_path=None, vid_out = None):
     classes = model.names
     
     if img_path != None:
+        print(f"[INFO] Working with image: {img_path}")
