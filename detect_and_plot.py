@@ -61,3 +61,4 @@ def plot_boxes(results, frame,classes):
     return frame
 
 # Main function
+def main(img_path=None, vid_path=None, vid_out = None):
