@@ -79,3 +79,4 @@ def main(image_path=None, video_path=None, video_out = None):
         frame = plot_boxes(results, frame, classes = classes)
         # Creating a window to display the result
         cv2.namedWindow("Image", cv2.WINDOW_NORMAL)
+        while True:
