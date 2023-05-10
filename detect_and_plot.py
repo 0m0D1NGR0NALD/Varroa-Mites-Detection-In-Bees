@@ -80,3 +80,4 @@ def main(image_path=None, video_path=None, video_out = None):
         # Creating a window to display the result
         cv2.namedWindow("Image", cv2.WINDOW_NORMAL)
         while True:
+            cv2.imshow("Image", frame)
