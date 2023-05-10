@@ -82,3 +82,4 @@ def main(image_path=None, video_path=None, video_out = None):
         while True:
             cv2.imshow("Image", frame)
             if cv2.waitKey(50000) & 0xFF == 27:
+                print(f"[INFO] Exiting. . . ")
