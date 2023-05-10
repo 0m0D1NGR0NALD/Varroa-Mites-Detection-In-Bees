@@ -67,3 +67,5 @@ def main(img_path=None, vid_path=None, vid_out = None):
     model = torch.hub.load('ultralytics/yolov5', 'custom', 'best.pt')
     # Class names in string format
     classes = model.names
+    
+    if img_path != None:
