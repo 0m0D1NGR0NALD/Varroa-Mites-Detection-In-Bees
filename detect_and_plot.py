@@ -79,9 +79,12 @@ def main(image_path=None, video_path=None, video_out = None):
         frame = plot_boxes(results, frame, classes = classes)
         # Creating a window to display the result
         cv2.namedWindow("Image", cv2.WINDOW_NORMAL)
+        # Loop to display image
         while True:
             cv2.imshow("Image", frame)
+            # Set up "esc" button as trigger to exit loop and save output
             if cv2.waitKey(50000) & 0xFF == 27:
                 print(f"[INFO] Exiting. . . ")
                 # Save he output result
                 cv2.imwrite("final_output.jpg", frame)
+                break
