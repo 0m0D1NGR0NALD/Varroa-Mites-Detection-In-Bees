@@ -63,3 +63,4 @@ def plot_boxes(results, frame,classes):
 # Main function
 def main(img_path=None, vid_path=None, vid_out = None):
     print(f"[INFO] Loading model... ")
+    model = torch.hub.load('ultralytics/yolov5', 'custom', 'best.pt')
