@@ -61,16 +61,16 @@ def plot_boxes(results, frame,classes):
     return frame
 
 # Main function
-def main(img_path=None, vid_path=None, vid_out = None):
+def main(image_path=None, video_path=None, video_out = None):
     print(f"[INFO] Loading model... ")
     # Loading the custom trained model
     model = torch.hub.load('ultralytics/yolov5', 'custom', 'best.pt')
     # Class names in string format
     classes = model.names
     
-    if img_path != None:
-        print(f"[INFO] Working with image: {img_path}")
-        frame = cv2.imread(img_path)
+    if image_path != None:
+        print(f"[INFO] Working with image: {image_path}")
+        frame = cv2.imread(image_path)
         frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
         # Detecting objects in input image  
         results = detectx(frame, model = model)  
