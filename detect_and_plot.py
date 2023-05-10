@@ -65,3 +65,5 @@ def main(img_path=None, vid_path=None, vid_out = None):
     print(f"[INFO] Loading model... ")
     # Loading the custom trained model
     model = torch.hub.load('ultralytics/yolov5', 'custom', 'best.pt')
+    # Class names in string format
+    classes = model.names
