@@ -72,3 +72,5 @@ def main(img_path=None, vid_path=None, vid_out = None):
         print(f"[INFO] Working with image: {img_path}")
         frame = cv2.imread(img_path)
         frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+        # Detecting objects in input image  
+        results = detectx(frame, model = model)
