@@ -92,3 +92,5 @@ def main(image_path=None, video_path=None, video_out = None):
         print(f"[INFO] Working with video: {video_path}")
         # Read the video
         vid = cv2.VideoCapture(video_path)
+        # Create the video writer if video output path is given
+        if video_out:
