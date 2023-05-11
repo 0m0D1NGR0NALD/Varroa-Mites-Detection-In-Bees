@@ -88,3 +88,4 @@ def main(image_path=None, video_path=None, video_out = None):
                 # Save he output result
                 cv2.imwrite("final_output.jpg", frame)
                 break
+    elif video_path !=None:
