@@ -96,3 +96,4 @@ def main(image_path=None, video_path=None, video_out = None):
         if video_out:
             # Default VideoCapture returns float instead of integer
             width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
+            height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
