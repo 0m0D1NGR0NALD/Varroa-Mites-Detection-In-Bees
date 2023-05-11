@@ -89,3 +89,4 @@ def main(image_path=None, video_path=None, video_out = None):
                 cv2.imwrite("final_output.jpg", frame)
                 break
     elif video_path !=None:
+        print(f"[INFO] Working with video: {video_path}")
