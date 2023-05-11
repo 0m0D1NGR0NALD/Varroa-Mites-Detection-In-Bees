@@ -90,3 +90,5 @@ def main(image_path=None, video_path=None, video_out = None):
                 break
     elif video_path !=None:
         print(f"[INFO] Working with video: {video_path}")
+        # Read the video
+        vid = cv2.VideoCapture(video_path)
