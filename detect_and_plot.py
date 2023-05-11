@@ -94,3 +94,5 @@ def main(image_path=None, video_path=None, video_out = None):
         vid = cv2.VideoCapture(video_path)
         # Create the video writer if video output path is given
         if video_out:
+            # Default VideoCapture returns float instead of integer
+            width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
