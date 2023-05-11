@@ -105,3 +105,4 @@ def main(image_path=None, video_path=None, video_out = None):
         cv2.namedWindow("Output Video", cv2.WINDOW_NORMAL)
         # Loop to display video frames
         while True:
+            ret, frame = vid.read()      
