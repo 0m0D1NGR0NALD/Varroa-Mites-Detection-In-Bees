@@ -100,3 +100,4 @@ def main(image_path=None, video_path=None, video_out = None):
             fps = int(cap.get(cv2.CAP_PROP_FPS))
             codec = cv2.VideoWriter_fourcc(*'mp4v')
             out = cv2.VideoWriter(video_out, codec, fps, (width, height))
+        frame_no = 1
