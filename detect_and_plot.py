@@ -130,3 +130,5 @@ def main(image_path=None, video_path=None, video_out = None):
         out.release()
         # Closing all windows
         cv2.destroyAllWindows()
+
+# Calling the main function
