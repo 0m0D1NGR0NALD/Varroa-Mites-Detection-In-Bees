@@ -5,6 +5,9 @@ This repository contains an implementation of Varroa Mite detection using YOLOv5
 ## Dataset
 Download Dataset via https://zenodo.org/record/4085044#.ZFib6nZBzrd
 
+## Usage
+**Model Training** Use the notebook titled : 'Varroa Mites Detection.ipynb' to train the varroa mites detection model stored in the path - yolov5/runs/train/yolov5s_results/weights/best.pt
+
 ## Input Sample Image :
 
 ![sample_image](https://user-images.githubusercontent.com/97228745/236753140-e448b3e6-a19c-4204-80ad-5efc2bfa05bb.png)
