@@ -70,6 +70,7 @@ def main(image_path=None, video_path=None, video_out = None):
     
     if image_path != None:
         print(f"[INFO] Working with image: {image_path}")
+        # Loading image from path and reading image
         frame = cv2.imread(image_path)
         frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
         # Detecting varroa mites in input image  
