@@ -112,3 +112,4 @@ def main(image_path=None, video_path=None, video_out = None):
                 frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
                 # Detecting varroa mites in each frame of the video 
                 results = detectx(frame, model = model)
+                frame = cv2.cvtColor(frame, cv2.COLOR_RGB2BGR)
