@@ -108,3 +108,4 @@ def main(image_path=None, video_path=None, video_out = None):
             ret, frame = vid.read()      
             if ret:
                 print(f"[INFO] Working with frame {frame_no} ")
+                frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
