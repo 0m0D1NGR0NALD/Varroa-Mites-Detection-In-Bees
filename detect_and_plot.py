@@ -106,3 +106,4 @@ def main(image_path=None, video_path=None, video_out = None):
         # Loop to display video frames
         while True:
             ret, frame = vid.read()      
+            if ret:
