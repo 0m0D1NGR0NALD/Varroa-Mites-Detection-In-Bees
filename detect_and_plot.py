@@ -120,3 +120,5 @@ def main(image_path=None, video_path=None, video_out = None):
                 if video_out:
                     print(f"[INFO] Saving output video. . . ")
                     out.write(frame)
+                # Set up "esc" button as trigger to exit loop and save output
+                if cv2.waitKey(50000) & 0xFF == 27:
