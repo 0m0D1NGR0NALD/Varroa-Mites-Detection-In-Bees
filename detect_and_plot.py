@@ -113,3 +113,5 @@ def main(image_path=None, video_path=None, video_out = None):
                 # Detecting varroa mites in each frame of the video 
                 results = detectx(frame, model = model)
                 frame = cv2.cvtColor(frame, cv2.COLOR_RGB2BGR)
+                # Drawing customized bounding boxes for each video frame
+                frame = plot_boxes(results, frame, classes = classes)
