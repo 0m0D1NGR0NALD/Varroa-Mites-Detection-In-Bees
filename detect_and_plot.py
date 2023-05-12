@@ -115,3 +115,5 @@ def main(image_path=None, video_path=None, video_out = None):
                 frame = cv2.cvtColor(frame, cv2.COLOR_RGB2BGR)
                 # Drawing customized bounding boxes for each video frame
                 frame = plot_boxes(results, frame, classes = classes)
+                # Display video frames
+                cv2.imshow("Output Video", frame)
