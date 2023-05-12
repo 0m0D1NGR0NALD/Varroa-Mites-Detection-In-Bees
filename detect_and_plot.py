@@ -124,3 +124,4 @@ def main(image_path=None, video_path=None, video_out = None):
                 if cv2.waitKey(50000) & 0xFF == 27:
                     break
                 frame_no += 1
+        print(f"[INFO] Cleaning up. . . ")
