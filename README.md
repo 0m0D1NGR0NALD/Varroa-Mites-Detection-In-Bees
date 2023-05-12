@@ -7,7 +7,10 @@ Download Dataset via https://zenodo.org/record/4085044#.ZFib6nZBzrd
 
 ## Usage
 **Notebook Preparation:** The file titled 'custom_data.yaml' contains the customized ulterations for the data paths as well as the classes under investigation.
+
 **Model Training:** Use the notebook titled : 'Varroa Mites Detection.ipynb' to train the varroa mites detection model stored in the path >> yolov5/runs/train/yolov5s_results/weights/best.pt, post training.
+
+**Inference:** Use 'detect_and_plot.py' to carry out inference on the model using only single image and video data, a single prediction at a time.
 
 ## Input Sample Image :
 
