@@ -128,3 +128,5 @@ def main(image_path=None, video_path=None, video_out = None):
         print(f"[INFO] Cleaning up. . . ")
         # Releasing the writer
         out.release()
+        # Closing all windows
+        cv2.destroyAllWindows()
