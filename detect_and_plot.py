@@ -72,7 +72,7 @@ def main(image_path=None, video_path=None, video_out = None):
         print(f"[INFO] Working with image: {image_path}")
         frame = cv2.imread(image_path)
         frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-        # Detecting objects in input image  
+        # Detecting varroa mites in input image  
         results = detectx(frame, model = model)  
         frame = cv2.cvtColor(frame, cv2.COLOR_RGB2BGR)
         # Drawing customized bounding boxes
@@ -109,3 +109,4 @@ def main(image_path=None, video_path=None, video_out = None):
             if ret:
                 print(f"[INFO] Working with frame {frame_no} ")
                 frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+                # Detecting varroa mites in each frame of the video 
