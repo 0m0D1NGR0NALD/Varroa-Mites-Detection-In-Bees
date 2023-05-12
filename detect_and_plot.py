@@ -123,3 +123,4 @@ def main(image_path=None, video_path=None, video_out = None):
                 # Set up "esc" button as trigger to exit loop and save output
                 if cv2.waitKey(50000) & 0xFF == 27:
                     break
+                frame_no += 1
