@@ -6,6 +6,8 @@ This repository contains an implementation of Varroa Mite detection using YOLOv5
 Download Dataset used via https://zenodo.org/record/4085044#.ZFib6nZBzrd
 
 ## Usage
+**Dataset Preparation:** Anotate dataset to customize it for YOLOv5 using Roboflow : https://app.roboflow.com
+
 **Notebook Preparation:** The file titled 'custom_data.yaml' contains the customized ulterations for the data paths as well as the classes under investigation.
 
 **Model Training:** Use the notebook titled : 'Varroa Mites Detection.ipynb' to train the varroa mites detection model stored in the path >> yolov5/runs/train/yolov5s_results/weights/best.pt, post training.
