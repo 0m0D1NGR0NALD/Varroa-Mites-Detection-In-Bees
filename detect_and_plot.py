@@ -119,9 +119,12 @@ def main(image_path=None, video_path=None, video_out = None):
                 cv2.imshow("Output Video", frame)
                 if video_out:
                     print(f"[INFO] Saving output video. . . ")
+                    # Write the frame into the video output file
                     out.write(frame)
                 # Set up "esc" button as trigger to exit loop and save output
                 if cv2.waitKey(50000) & 0xFF == 27:
                     break
                 frame_no += 1
         print(f"[INFO] Cleaning up. . . ")
+        # Releasing the writer
+        out.release()
