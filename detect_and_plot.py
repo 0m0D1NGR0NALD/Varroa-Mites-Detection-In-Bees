@@ -117,3 +117,4 @@ def main(image_path=None, video_path=None, video_out = None):
                 frame = plot_boxes(results, frame, classes = classes)
                 # Display video frames
                 cv2.imshow("Output Video", frame)
+                if vid_out:
