@@ -107,3 +107,4 @@ def main(image_path=None, video_path=None, video_out = None):
         while True:
             ret, frame = vid.read()      
             if ret:
+                print(f"[INFO] Working with frame {frame_no} ")
